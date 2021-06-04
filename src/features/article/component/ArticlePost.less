@@ -1,0 +1,101 @@
+@import '~@styles/global.less';
+
+.pcs-article-detail {
+  display: flex;
+  justify-content: center;
+
+  // 文章样式
+  article {
+    width: 800px;
+    padding: 20px;
+    background: #fff;
+    border-radius: @border-radius;
+    margin-top: 40px;
+
+    .title {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .category {
+      color: #000;
+      font-size: 14px;
+    }
+
+    .tags {
+      margin: 5px 0;
+    }
+
+    .infos {
+      display: flex;
+
+      &>div {
+        margin-right: 20px;
+
+        span {
+          padding-right: 5px;
+        }
+      }
+    }
+
+    .content {
+      blockquote {
+        padding-left: 10px;
+        border-left: 5px solid #afafaf;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .author {
+      margin-top: 20px;
+    }
+
+    .operation {
+      display: flex;
+      justify-content: center;
+
+      &>div {
+        text-align: center;
+        cursor: pointer;
+
+        &:first-of-type {
+          margin-right: 50px;
+        }
+
+        svg {
+          font-size: 50px;
+        }
+      }
+    }
+
+    .comment {
+      .ant-btn + .prompt{
+        padding-left: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  // 评论区引用
+  .comment-ref {
+    blockquote {
+      background: #e6e6e6;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .remove {
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 12px;
+      transition: color 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: #595959;
+      }
+    }
+  }
+}

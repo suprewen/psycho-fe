@@ -1,0 +1,93 @@
+.chat-detail {
+    width: 800px;
+    display: flex;
+    background: #fff;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px;
+
+
+    .header {
+        display: flex;
+        padding: 10px 40px;
+        position: relative;
+
+        .avatar>img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .name {
+            font-size: 20px;
+            display: inline-flex;
+            align-items: flex-end;
+        }
+
+        .status {
+            position: absolute;
+            right: 40px;
+            top: 30px;
+        }
+
+        .status>.ant-tag {
+            font-size: 20px;
+            width: 80px;
+            height: 35px;
+            text-align: center;
+            line-height: 32px;
+        }
+    }
+
+    .main {
+        section {
+            padding: 20px 20px 0;
+            height: 50vh;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+
+            .bubble-container {
+              width: 100%;
+              display: flex;
+            }
+
+            .bubble {
+              border: .5px solid black;
+              border-radius: 10px;              
+              margin: 5px;
+              padding: 10px;
+              display: inline-block;
+            }
+
+            .right {
+              justify-content: flex-end;
+            }
+
+            .left {
+              justify-content: flex-start;
+            }
+        }
+    }
+
+    .footer {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .send {
+          margin-top: 5px;
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-evenly;
+
+            // &>button:first-of-type {
+            //     margin-right: 50px;
+            // }
+        }
+    }
+}

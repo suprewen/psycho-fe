@@ -1,0 +1,14 @@
+## node
+node_modules/
+
+## DS_Store
+.DS_Store
+
+## builds
+build/
+
+## template
+tsconfig-copy.json
+
+## concat assets
+public/assets
